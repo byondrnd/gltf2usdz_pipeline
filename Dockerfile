@@ -11,7 +11,7 @@ RUN curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | 
   pip install -U virtualenv pipenv --no-cache-dir && \
   pip install -U awscli boto3 aws-sam-cli==0.10.0 aws-lambda-builders==0.0.5 --no-cache-dir
 
-RUN pip install --index-url=http://download.qt.io/snapshots/ci/pyside/5.9/latest/ pyside2 --trusted-host download.qt.io && \
+RUN pip install --index-url=http://download.qt.io/snapshots/ci/pyside/5.14/latest/ pyside2 --trusted-host download.qt.io && \
   pip install PyOpenGL && \
   git clone https://github.com/PixarAnimationStudios/USD
 
