@@ -59,5 +59,5 @@ RUN git clone https://github.com/kcoley/gltf2usd.git
 RUN cd gltf2usd && \
   pip install -r requirements.txt
 
-# RUN python gltf2usd/Source/gltf2usd.py -g /root/shared-folder/Bed_Option01.gltf  -o /root/shared-folder/output.usdc && \
-#   usdzip /root/shared-folder/ex.usdz --arkitAsset /root/shared-folder/output.usdc
+# RUN python gltf2usd/Source/gltf2usd.py -g /var/task/shared/input.gltf  -o /var/task/shared/output.usdc && \
+#   usdzip /var/task/shared/ex.usdz --arkitAsset /var/task/shared/output.usdc
