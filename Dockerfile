@@ -55,7 +55,7 @@ RUN python USD/build_scripts/build_usd.py /usr/local/USD
 ENV PYTHONPATH ${PYTHONPATH}:/usr/local/USD/lib/python/ 
 ENV PATH ${PATH}:/usr/local/USD/bin
 
-RUN git clone https://github.com/kcoley/gltf2usd.git`
+RUN git clone https://github.com/kcoley/gltf2usd.git
 RUN cd gltf2usd && \
   pip install -r requirements.txt
 
